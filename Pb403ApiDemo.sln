@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pb403ApiDemo", "Pb403ApiDemo\Pb403ApiDemo.csproj", "{8D737060-5FF4-4447-ABA8-15DD5BDDA92E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleClient", "Console.Client\ConsoleClient.csproj", "{45B0AC24-69E2-4195-89B9-87A306F3C314}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		ClientHtmlDemo.html = ClientHtmlDemo.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "onionDemo", "onionDemo", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D737060-5FF4-4447-ABA8-15DD5BDDA92E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D737060-5FF4-4447-ABA8-15DD5BDDA92E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D737060-5FF4-4447-ABA8-15DD5BDDA92E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D737060-5FF4-4447-ABA8-15DD5BDDA92E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45B0AC24-69E2-4195-89B9-87A306F3C314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45B0AC24-69E2-4195-89B9-87A306F3C314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45B0AC24-69E2-4195-89B9-87A306F3C314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45B0AC24-69E2-4195-89B9-87A306F3C314}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C088DA1-7A9B-4263-B61F-E2A236028FEB}
+	EndGlobalSection
+EndGlobal

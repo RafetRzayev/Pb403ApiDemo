@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata">
+<IX_sinif_27_09_25_yi>
+<ID>4</ID>
+<Ad>TÜRKAN        </Ad>
+<Soyad>BƏŞİRZADƏ     </Soyad>
+<Ata_adı>ZAUR          </Ata_adı>
+<İş_nömrəsi>9001</İş_nömrəsi>
+<Məktəb>   </Məktəb>
+<Variant>A</Variant>
+<Sinif>8</Sinif>
+<Dil>AZ</Dil>
+<Tədris_dili_Cavabınız>CADEACCECCDCBADDCBACEEACDA</Tədris_dili_Cavabınız>
+<Tədris_dili_Doğru_cavablar>CBCEACDEDADCBBDCABACBEECDA</Tədris_dili_Doğru_cavablar>
+<Tədris_dili_Status>+--+++-+--+++-+--+++-+-+++</Tədris_dili_Status>
+<Tədris_dili_Açıq_test_Cavabınız></Tədris_dili_Açıq_test_Cavabınız>
+<Tədris_dili_Açıq_test_Doğru_cavablar></Tədris_dili_Açıq_test_Doğru_cavablar>
+<Tədris_dili_Açıq_test_Status></Tədris_dili_Açıq_test_Status>
+<Tədris_dili_Yazı_işi_balları>2|2|2|0</Tədris_dili_Yazı_işi_balları>
+<Tədris_dili_Sual_sayı>30</Tədris_dili_Sual_sayı>
+<Tədris_dili_Doğru_sayı>16</Tədris_dili_Doğru_sayı>
+<Tədris_dili_Doğru_faizi>61,54</Tədris_dili_Doğru_faizi>
+<Tədris_dili_Səhv_sayı>10</Tədris_dili_Səhv_sayı>
+<Tədris_dili_Xalis_sayı>16</Tədris_dili_Xalis_sayı>
+<Tədris_dili_Xalis_faizi>61,54</Tədris_dili_Xalis_faizi>
+<Tədris_dili_Nisbi_bal>64,71</Tədris_dili_Nisbi_bal>
+<Azərbaycan_dili_Cavabınız></Azərbaycan_dili_Cavabınız>
+<Azərbaycan_dili_Doğru_cavablar></Azərbaycan_dili_Doğru_cavablar>
+<Azərbaycan_dili_Status></Azərbaycan_dili_Status>
+<Azərbaycan_dili_Açıq_test_Cavabınız></Azərbaycan_dili_Açıq_test_Cavabınız>
+<Azərbaycan_dili_Açıq_test_Doğru_cavablar></Azərbaycan_dili_Açıq_test_Doğru_cavablar>
+<Azərbaycan_dili_Açıq_test_Status></Azərbaycan_dili_Açıq_test_Status>
+<Azərbaycan_dili_Yazı_işi_balları></Azərbaycan_dili_Yazı_işi_balları>
+<Azərbaycan_dili_Sual_sayı></Azərbaycan_dili_Sual_sayı>
+<Azərbaycan_dili_Doğru_sayı></Azərbaycan_dili_Doğru_sayı>
+<Azərbaycan_dili_Doğru_faizi></Azərbaycan_dili_Doğru_faizi>
+<Azərbaycan_dili_Səhv_sayı></Azərbaycan_dili_Səhv_sayı>
+<Azərbaycan_dili_Xalis_sayı></Azərbaycan_dili_Xalis_sayı>
+<Azərbaycan_dili_Xalis_faizi></Azərbaycan_dili_Xalis_faizi>
+<Azərbaycan_dili_Nisbi_bal></Azərbaycan_dili_Nisbi_bal>
+<Riyaziyyat_Cavabınız>               </Riyaziyyat_Cavabınız>
+<Riyaziyyat_Doğru_cavablar>CCEADABEEDABEEA</Riyaziyyat_Doğru_cavablar>
+<Riyaziyyat_Status>               </Riyaziyyat_Status>
+<Riyaziyyat_Açıq_test_Cavabınız>|||||||</Riyaziyyat_Açıq_test_Cavabınız>
+<Riyaziyyat_Açıq_test_Doğru_cavablar>|5|180|11|5|9|40|</Riyaziyyat_Açıq_test_Doğru_cavablar>
+<Riyaziyyat_Açıq_test_Status>      </Riyaziyyat_Açıq_test_Status>
+<Riyaziyyat_Yazı_işi_balları>0</Riyaziyyat_Yazı_işi_balları>
+<Riyaziyyat_Sual_sayı>25</Riyaziyyat_Sual_sayı>
+<Riyaziyyat_Doğru_sayı>0</Riyaziyyat_Doğru_sayı>
+<Riyaziyyat_Doğru_faizi>0</Riyaziyyat_Doğru_faizi>
+<Riyaziyyat_Səhv_sayı>0</Riyaziyyat_Səhv_sayı>
+<Riyaziyyat_Xalis_sayı>0</Riyaziyyat_Xalis_sayı>
+<Riyaziyyat_Xalis_faizi>0</Riyaziyyat_Xalis_faizi>
+<Riyaziyyat_Nisbi_bal>0</Riyaziyyat_Nisbi_bal>
+<Xarici_dil_Cavabınız>BBBAECBECDDBDABDBDDABD</Xarici_dil_Cavabınız>
+<Xarici_dil_Doğru_cavablar>ABADECEDCECADADDBDDCDD</Xarici_dil_Doğru_cavablar>
+<Xarici_dil_Status>-+--++--+---++-++++--+</Xarici_dil_Status>
+<Xarici_dil_Açıq_test_Cavabınız>|||</Xarici_dil_Açıq_test_Cavabınız>
+<Xarici_dil_Açıq_test_Doğru_cavablar>|14|13|</Xarici_dil_Açıq_test_Doğru_cavablar>
+<Xarici_dil_Açıq_test_Status>  </Xarici_dil_Açıq_test_Status>
+<Xarici_dil_Yazı_işi_balları>0  |0  </Xarici_dil_Yazı_işi_balları>
+<Xarici_dil_Sual_sayı>26</Xarici_dil_Sual_sayı>
+<Xarici_dil_Doğru_sayı>11</Xarici_dil_Doğru_sayı>
+<Xarici_dil_Doğru_faizi>45,83</Xarici_dil_Doğru_faizi>
+<Xarici_dil_Səhv_sayı>11</Xarici_dil_Səhv_sayı>
+<Xarici_dil_Xalis_sayı>11</Xarici_dil_Xalis_sayı>
+<Xarici_dil_Xalis_faizi>45,83</Xarici_dil_Xalis_faizi>
+<Xarici_dil_Nisbi_bal>36,67</Xarici_dil_Nisbi_bal>
+<CƏMİ_SUAL_SAYI>81</CƏMİ_SUAL_SAYI>
+<CƏMİ_DOĞRU>27</CƏMİ_DOĞRU>
+<CƏMİ_DOĞRU_faizi>38,03</CƏMİ_DOĞRU_faizi>
+<CƏMİ_SƏHV>21</CƏMİ_SƏHV>
+<CƏMİ_XALİS>27</CƏMİ_XALİS>
+<CƏMİ_XALİS_faizi>38,03</CƏMİ_XALİS_faizi>
+<BAL>101,38</BAL>
+<SIRA>1</SIRA>
+</IX_sinif_27_09_25_yi>
+<IX_sinif_27_09_25_yi>
+<ID>2</ID>
+<Ad>YUSİF         </Ad>
+<Soyad>CƏBRAYILLI    </Soyad>
+<Ata_adı>ƏLİ           </Ata_adı>
+<İş_nömrəsi>9003</İş_nömrəsi>
+<Məktəb>014</Məktəb>
+<Variant>A</Variant>
+<Sinif>8</Sinif>
+<Dil>AZ</Dil>
+<Tədris_dili_Cavabınız>                          </Tədris_dili_Cavabınız>
+<Tədris_dili_Doğru_cavablar>CBCEACDEDADCBBDCABACBEECDA</Tədris_dili_Doğru_cavablar>
+<Tədris_dili_Status>                          </Tədris_dili_Status>
+<Tədris_dili_Açıq_test_Cavabınız></Tədris_dili_Açıq_test_Cavabınız>
+<Tədris_dili_Açıq_test_Doğru_cavablar></Tədris_dili_Açıq_test_Doğru_cavablar>
+<Tədris_dili_Açıq_test_Status></Tədris_dili_Açıq_test_Status>
+<Tədris_dili_Yazı_işi_balları></Tədris_dili_Yazı_işi_balları>
+<Tədris_dili_Sual_sayı>30</Tədris_dili_Sual_sayı>
+<Tədris_dili_Doğru_sayı>0</Tədris_dili_Doğru_sayı>
+<Tədris_dili_Doğru_faizi>0</Tədris_dili_Doğru_faizi>
+<Tədris_dili_Səhv_sayı>0</Tədris_dili_Səhv_sayı>
+<Tədris_dili_Xalis_sayı>0</Tədris_dili_Xalis_sayı>
+<Tədris_dili_Xalis_faizi>0</Tədris_dili_Xalis_faizi>
+<Tədris_dili_Nisbi_bal>0</Tədris_dili_Nisbi_bal>
+<Azərbaycan_dili_Cavabınız></Azərbaycan_dili_Cavabınız>
+<Azərbaycan_dili_Doğru_cavablar></Azərbaycan_dili_Doğru_cavablar>
+<Azərbaycan_dili_Status></Azərbaycan_dili_Status>
+<Azərbaycan_dili_Açıq_test_Cavabınız></Azərbaycan_dili_Açıq_test_Cavabınız>
+<Azərbaycan_dili_Açıq_test_Doğru_cavablar></Azərbaycan_dili_Açıq_test_Doğru_cavablar>
+<Azərbaycan_dili_Açıq_test_Status></Azərbaycan_dili_Açıq_test_Status>
+<Azərbaycan_dili_Yazı_işi_balları></Azərbaycan_dili_Yazı_işi_balları>
+<Azərbaycan_dili_Sual_sayı></Azərbaycan_dili_Sual_sayı>
+<Azərbaycan_dili_Doğru_sayı></Azərbaycan_dili_Doğru_sayı>
+<Azərbaycan_dili_Doğru_faizi></Azərbaycan_dili_Doğru_faizi>
+<Azərbaycan_dili_Səhv_sayı></Azərbaycan_dili_Səhv_sayı>
+<Azərbaycan_dili_Xalis_sayı></Azərbaycan_dili_Xalis_sayı>
+<Azərbaycan_dili_Xalis_faizi></Azərbaycan_dili_Xalis_faizi>
+<Azərbaycan_dili_Nisbi_bal></Azərbaycan_dili_Nisbi_bal>
+<Riyaziyyat_Cavabınız>               </Riyaziyyat_Cavabınız>
+<Riyaziyyat_Doğru_cavablar>CCEADABEEDABEEA</Riyaziyyat_Doğru_cavablar>
+<Riyaziyyat_Status>               </Riyaziyyat_Status>
+<Riyaziyyat_Açıq_test_Cavabınız>|||||||</Riyaziyyat_Açıq_test_Cavabınız>
+<Riyaziyyat_Açıq_test_Doğru_cavablar>|5|180|11|5|9|40|</Riyaziyyat_Açıq_test_Doğru_cavablar>
+<Riyaziyyat_Açıq_test_Status>      </Riyaziyyat_Açıq_test_Status>
+<Riyaziyyat_Yazı_işi_balları></Riyaziyyat_Yazı_işi_balları>
+<Riyaziyyat_Sual_sayı>25</Riyaziyyat_Sual_sayı>
+<Riyaziyyat_Doğru_sayı>0</Riyaziyyat_Doğru_sayı>
+<Riyaziyyat_Doğru_faizi>0</Riyaziyyat_Doğru_faizi>
+<Riyaziyyat_Səhv_sayı>0</Riyaziyyat_Səhv_sayı>
+<Riyaziyyat_Xalis_sayı>0</Riyaziyyat_Xalis_sayı>
+<Riyaziyyat_Xalis_faizi>0</Riyaziyyat_Xalis_faizi>
+<Riyaziyyat_Nisbi_bal>0</Riyaziyyat_Nisbi_bal>
+<Xarici_dil_Cavabınız>ABADECEDCECBDDBDBDDCAD</Xarici_dil_Cavabınız>
+<Xarici_dil_Doğru_cavablar>ABADECEDCECADADDBDDCDD</Xarici_dil_Doğru_cavablar>
+<Xarici_dil_Status>+++++++++++-+--+++++-+</Xarici_dil_Status>
+<Xarici_dil_Açıq_test_Cavabınız>|13|13|</Xarici_dil_Açıq_test_Cavabınız>
+<Xarici_dil_Açıq_test_Doğru_cavablar>|14|13|</Xarici_dil_Açıq_test_Doğru_cavablar>
+<Xarici_dil_Açıq_test_Status>-+</Xarici_dil_Açıq_test_Status>
+<Xarici_dil_Yazı_işi_balları>1  |0  </Xarici_dil_Yazı_işi_balları>
+<Xarici_dil_Sual_sayı>26</Xarici_dil_Sual_sayı>
+<Xarici_dil_Doğru_sayı>19</Xarici_dil_Doğru_sayı>
+<Xarici_dil_Doğru_faizi>79,17</Xarici_dil_Doğru_faizi>
+<Xarici_dil_Səhv_sayı>5</Xarici_dil_Səhv_sayı>
+<Xarici_dil_Xalis_sayı>19</Xarici_dil_Xalis_sayı>
+<Xarici_dil_Xalis_faizi>79,17</Xarici_dil_Xalis_faizi>
+<Xarici_dil_Nisbi_bal>66,67</Xarici_dil_Nisbi_bal>
+<CƏMİ_SUAL_SAYI>81</CƏMİ_SUAL_SAYI>
+<CƏMİ_DOĞRU>19</CƏMİ_DOĞRU>
+<CƏMİ_DOĞRU_faizi>26,76</CƏMİ_DOĞRU_faizi>
+<CƏMİ_SƏHV>5</CƏMİ_SƏHV>
+<CƏMİ_XALİS>19</CƏMİ_XALİS>
+<CƏMİ_XALİS_faizi>26,76</CƏMİ_XALİS_faizi>
+<BAL>66,67</BAL>
+<SIRA>2</SIRA>
+</IX_sinif_27_09_25_yi>
+<IX_sinif_27_09_25_yi>
+<ID>3</ID>
+<Ad>ABDULLAH      </Ad>
+<Soyad>ŞABİZADƏ      </Soyad>
+<Ata_adı>SƏNAN         </Ata_adı>
+<İş_nömrəsi>9004</İş_nömrəsi>
+<Məktəb> 13</Məktəb>
+<Variant>A</Variant>
+<Sinif>8</Sinif>
+<Dil>AZ</Dil>
+<Tədris_dili_Cavabınız>                          </Tədris_dili_Cavabınız>
+<Tədris_dili_Doğru_cavablar>CBCEACDEDADCBBDCABACBEECDA</Tədris_dili_Doğru_cavablar>
+<Tədris_dili_Status>                          </Tədris_dili_Status>
+<Tədris_dili_Açıq_test_Cavabınız></Tədris_dili_Açıq_test_Cavabınız>
+<Tədris_dili_Açıq_test_Doğru_cavablar></Tədris_dili_Açıq_test_Doğru_cavablar>
+<Tədris_dili_Açıq_test_Status></Tədris_dili_Açıq_test_Status>
+<Tədris_dili_Yazı_işi_balları></Tədris_dili_Yazı_işi_balları>
+<Tədris_dili_Sual_sayı>30</Tədris_dili_Sual_sayı>
+<Tədris_dili_Doğru_sayı>0</Tədris_dili_Doğru_sayı>
+<Tədris_dili_Doğru_faizi>0</Tədris_dili_Doğru_faizi>
+<Tədris_dili_Səhv_sayı>0</Tədris_dili_Səhv_sayı>
+<Tədris_dili_Xalis_sayı>0</Tədris_dili_Xalis_sayı>
+<Tədris_dili_Xalis_faizi>0</Tədris_dili_Xalis_faizi>
+<Tədris_dili_Nisbi_bal>0</Tədris_dili_Nisbi_bal>
+<Azərbaycan_dili_Cavabınız></Azərbaycan_dili_Cavabınız>
+<Azərbaycan_dili_Doğru_cavablar></Azərbaycan_dili_Doğru_cavablar>
+<Azərbaycan_dili_Status></Azərbaycan_dili_Status>
+<Azərbaycan_dili_Açıq_test_Cavabınız></Azərbaycan_dili_Açıq_test_Cavabınız>
+<Azərbaycan_dili_Açıq_test_Doğru_cavablar></Azərbaycan_dili_Açıq_test_Doğru_cavablar>
+<Azərbaycan_dili_Açıq_test_Status></Azərbaycan_dili_Açıq_test_Status>
+<Azərbaycan_dili_Yazı_işi_balları></Azərbaycan_dili_Yazı_işi_balları>
+<Azərbaycan_dili_Sual_sayı></Azərbaycan_dili_Sual_sayı>
+<Azərbaycan_dili_Doğru_sayı></Azərbaycan_dili_Doğru_sayı>
+<Azərbaycan_dili_Doğru_faizi></Azərbaycan_dili_Doğru_faizi>
+<Azərbaycan_dili_Səhv_sayı></Azərbaycan_dili_Səhv_sayı>
+<Azərbaycan_dili_Xalis_sayı></Azərbaycan_dili_Xalis_sayı>
+<Azərbaycan_dili_Xalis_faizi></Azərbaycan_dili_Xalis_faizi>
+<Azərbaycan_dili_Nisbi_bal></Azərbaycan_dili_Nisbi_bal>
+<Riyaziyyat_Cavabınız>               </Riyaziyyat_Cavabınız>
+<Riyaziyyat_Doğru_cavablar>CCEADABEEDABEEA</Riyaziyyat_Doğru_cavablar>
+<Riyaziyyat_Status>               </Riyaziyyat_Status>
+<Riyaziyyat_Açıq_test_Cavabınız>|||||||</Riyaziyyat_Açıq_test_Cavabınız>
+<Riyaziyyat_Açıq_test_Doğru_cavablar>|5|180|11|5|9|40|</Riyaziyyat_Açıq_test_Doğru_cavablar>
+<Riyaziyyat_Açıq_test_Status>      </Riyaziyyat_Açıq_test_Status>
+<Riyaziyyat_Yazı_işi_balları></Riyaziyyat_Yazı_işi_balları>
+<Riyaziyyat_Sual_sayı>25</Riyaziyyat_Sual_sayı>
+<Riyaziyyat_Doğru_sayı>0</Riyaziyyat_Doğru_sayı>
+<Riyaziyyat_Doğru_faizi>0</Riyaziyyat_Doğru_faizi>
+<Riyaziyyat_Səhv_sayı>0</Riyaziyyat_Səhv_sayı>
+<Riyaziyyat_Xalis_sayı>0</Riyaziyyat_Xalis_sayı>
+<Riyaziyyat_Xalis_faizi>0</Riyaziyyat_Xalis_faizi>
+<Riyaziyyat_Nisbi_bal>0</Riyaziyyat_Nisbi_bal>
+<Xarici_dil_Cavabınız>BDACACEDCEAADBBDBDBCDB</Xarici_dil_Cavabınız>
+<Xarici_dil_Doğru_cavablar>ABADECEDCECADADDBDDCDD</Xarici_dil_Doğru_cavablar>
+<Xarici_dil_Status>--+--+++++-++--+++-++-</Xarici_dil_Status>
+<Xarici_dil_Açıq_test_Cavabınız>|14|13|</Xarici_dil_Açıq_test_Cavabınız>
+<Xarici_dil_Açıq_test_Doğru_cavablar>|14|13|</Xarici_dil_Açıq_test_Doğru_cavablar>
+<Xarici_dil_Açıq_test_Status>++</Xarici_dil_Açıq_test_Status>
+<Xarici_dil_Yazı_işi_balları>1  |3,5</Xarici_dil_Yazı_işi_balları>
+<Xarici_dil_Sual_sayı>26</Xarici_dil_Sual_sayı>
+<Xarici_dil_Doğru_sayı>15</Xarici_dil_Doğru_sayı>
+<Xarici_dil_Doğru_faizi>62,5</Xarici_dil_Doğru_faizi>
+<Xarici_dil_Səhv_sayı>9</Xarici_dil_Səhv_sayı>
+<Xarici_dil_Xalis_sayı>15</Xarici_dil_Xalis_sayı>
+<Xarici_dil_Xalis_faizi>62,5</Xarici_dil_Xalis_faizi>
+<Xarici_dil_Nisbi_bal>65</Xarici_dil_Nisbi_bal>
+<CƏMİ_SUAL_SAYI>81</CƏMİ_SUAL_SAYI>
+<CƏMİ_DOĞRU>15</CƏMİ_DOĞRU>
+<CƏMİ_DOĞRU_faizi>21,13</CƏMİ_DOĞRU_faizi>
+<CƏMİ_SƏHV>9</CƏMİ_SƏHV>
+<CƏMİ_XALİS>15</CƏMİ_XALİS>
+<CƏMİ_XALİS_faizi>21,13</CƏMİ_XALİS_faizi>
+<BAL>65</BAL>
+<SIRA>3</SIRA>
+</IX_sinif_27_09_25_yi>
+<IX_sinif_27_09_25_yi>
+<ID>1</ID>
+<Ad>FATEH         </Ad>
+<Soyad>UMUDZADƏ      </Soyad>
+<Ata_adı>ŞÜKÜRAN       </Ata_adı>
+<İş_nömrəsi>9002</İş_nömrəsi>
+<Məktəb>   </Məktəb>
+<Variant>A</Variant>
+<Sinif>8</Sinif>
+<Dil>AZ</Dil>
+<Tədris_dili_Cavabınız>                          </Tədris_dili_Cavabınız>
+<Tədris_dili_Doğru_cavablar>CBCEACDEDADCBBDCABACBEECDA</Tədris_dili_Doğru_cavablar>
+<Tədris_dili_Status>                          </Tədris_dili_Status>
+<Tədris_dili_Açıq_test_Cavabınız></Tədris_dili_Açıq_test_Cavabınız>
+<Tədris_dili_Açıq_test_Doğru_cavablar></Tədris_dili_Açıq_test_Doğru_cavablar>
+<Tədris_dili_Açıq_test_Status></Tədris_dili_Açıq_test_Status>
+<Tədris_dili_Yazı_işi_balları></Tədris_dili_Yazı_işi_balları>
+<Tədris_dili_Sual_sayı>30</Tədris_dili_Sual_sayı>
+<Tədris_dili_Doğru_sayı>0</Tədris_dili_Doğru_sayı>
+<Tədris_dili_Doğru_faizi>0</Tədris_dili_Doğru_faizi>
+<Tədris_dili_Səhv_sayı>0</Tədris_dili_Səhv_sayı>
+<Tədris_dili_Xalis_sayı>0</Tədris_dili_Xalis_sayı>
+<Tədris_dili_Xalis_faizi>0</Tədris_dili_Xalis_faizi>
+<Tədris_dili_Nisbi_bal>0</Tədris_dili_Nisbi_bal>
+<Azərbaycan_dili_Cavabınız></Azərbaycan_dili_Cavabınız>
+<Azərbaycan_dili_Doğru_cavablar></Azərbaycan_dili_Doğru_cavablar>
+<Azərbaycan_dili_Status></Azərbaycan_dili_Status>
+<Azərbaycan_dili_Açıq_test_Cavabınız></Azərbaycan_dili_Açıq_test_Cavabınız>
+<Azərbaycan_dili_Açıq_test_Doğru_cavablar></Azərbaycan_dili_Açıq_test_Doğru_cavablar>
+<Azərbaycan_dili_Açıq_test_Status></Azərbaycan_dili_Açıq_test_Status>
+<Azərbaycan_dili_Yazı_işi_balları></Azərbaycan_dili_Yazı_işi_balları>
+<Azərbaycan_dili_Sual_sayı></Azərbaycan_dili_Sual_sayı>
+<Azərbaycan_dili_Doğru_sayı></Azərbaycan_dili_Doğru_sayı>
+<Azərbaycan_dili_Doğru_faizi></Azərbaycan_dili_Doğru_faizi>
+<Azərbaycan_dili_Səhv_sayı></Azərbaycan_dili_Səhv_sayı>
+<Azərbaycan_dili_Xalis_sayı></Azərbaycan_dili_Xalis_sayı>
+<Azərbaycan_dili_Xalis_faizi></Azərbaycan_dili_Xalis_faizi>
+<Azərbaycan_dili_Nisbi_bal></Azərbaycan_dili_Nisbi_bal>
+<Riyaziyyat_Cavabınız>               </Riyaziyyat_Cavabınız>
+<Riyaziyyat_Doğru_cavablar>CCEADABEEDABEEA</Riyaziyyat_Doğru_cavablar>
+<Riyaziyyat_Status>               </Riyaziyyat_Status>
+<Riyaziyyat_Açıq_test_Cavabınız>|||||||</Riyaziyyat_Açıq_test_Cavabınız>
+<Riyaziyyat_Açıq_test_Doğru_cavablar>|5|180|11|5|9|40|</Riyaziyyat_Açıq_test_Doğru_cavablar>
+<Riyaziyyat_Açıq_test_Status>      </Riyaziyyat_Açıq_test_Status>
+<Riyaziyyat_Yazı_işi_balları></Riyaziyyat_Yazı_işi_balları>
+<Riyaziyyat_Sual_sayı>25</Riyaziyyat_Sual_sayı>
+<Riyaziyyat_Doğru_sayı>0</Riyaziyyat_Doğru_sayı>
+<Riyaziyyat_Doğru_faizi>0</Riyaziyyat_Doğru_faizi>
+<Riyaziyyat_Səhv_sayı>0</Riyaziyyat_Səhv_sayı>
+<Riyaziyyat_Xalis_sayı>0</Riyaziyyat_Xalis_sayı>
+<Riyaziyyat_Xalis_faizi>0</Riyaziyyat_Xalis_faizi>
+<Riyaziyyat_Nisbi_bal>0</Riyaziyyat_Nisbi_bal>
+<Xarici_dil_Cavabınız>AECDECEACDCBCBADBDDCDB</Xarici_dil_Cavabınız>
+<Xarici_dil_Doğru_cavablar>ABADECEDCECADADDBDDCDD</Xarici_dil_Doğru_cavablar>
+<Xarici_dil_Status>+--++++-+-+----++++++-</Xarici_dil_Status>
+<Xarici_dil_Açıq_test_Cavabınız>|||</Xarici_dil_Açıq_test_Cavabınız>
+<Xarici_dil_Açıq_test_Doğru_cavablar>|14|13|</Xarici_dil_Açıq_test_Doğru_cavablar>
+<Xarici_dil_Açıq_test_Status>  </Xarici_dil_Açıq_test_Status>
+<Xarici_dil_Yazı_işi_balları>0,5|1  </Xarici_dil_Yazı_işi_balları>
+<Xarici_dil_Sual_sayı>26</Xarici_dil_Sual_sayı>
+<Xarici_dil_Doğru_sayı>13</Xarici_dil_Doğru_sayı>
+<Xarici_dil_Doğru_faizi>54,17</Xarici_dil_Doğru_faizi>
+<Xarici_dil_Səhv_sayı>9</Xarici_dil_Səhv_sayı>
+<Xarici_dil_Xalis_sayı>13</Xarici_dil_Xalis_sayı>
+<Xarici_dil_Xalis_faizi>54,17</Xarici_dil_Xalis_faizi>
+<Xarici_dil_Nisbi_bal>48,33</Xarici_dil_Nisbi_bal>
+<CƏMİ_SUAL_SAYI>81</CƏMİ_SUAL_SAYI>
+<CƏMİ_DOĞRU>13</CƏMİ_DOĞRU>
+<CƏMİ_DOĞRU_faizi>18,31</CƏMİ_DOĞRU_faizi>
+<CƏMİ_SƏHV>9</CƏMİ_SƏHV>
+<CƏMİ_XALİS>13</CƏMİ_XALİS>
+<CƏMİ_XALİS_faizi>18,31</CƏMİ_XALİS_faizi>
+<BAL>48,33</BAL>
+<SIRA>4</SIRA>
+</IX_sinif_27_09_25_yi>
+</dataroot>

@@ -1,0 +1,6 @@
+@Pb403ApiDemo_HostAddress = http://localhost:5064
+
+GET {{Pb403ApiDemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASP.NET API Təlimi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #512da8 0%, #673ab7 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: #f5f5f5;
+            padding: 15px 40px;
+            border-bottom: 3px solid #512da8;
+        }
+
+        nav button {
+            background: white;
+            border: 2px solid #512da8;
+            color: #512da8;
+            padding: 10px 20px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        nav button:hover {
+            background: #512da8;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(81, 45, 168, 0.3);
+        }
+
+        nav button.active {
+            background: #512da8;
+            color: white;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: #512da8;
+            font-size: 2em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #512da8;
+        }
+
+        h3 {
+            color: #673ab7;
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 1.05em;
+        }
+
+        .code-block {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            border-left: 4px solid #512da8;
+            position: relative;
+        }
+
+        .code-block code {
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .method-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 5px solid #512da8;
+            transition: transform 0.3s;
+        }
+
+        .method-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .method-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 0.9em;
+        }
+
+        .get { background: #4caf50; color: white; }
+        .post { background: #2196f3; color: white; }
+        .put { background: #ff9800; color: white; }
+        .delete { background: #f44336; color: white; }
+
+        .example-box {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .note-box {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background: #512da8;
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background: #f5f5f5;
+        }
+
+        footer {
+            background: #2d2d2d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 ASP.NET Web API Təlimi</h1>
+            <p>Route, HTTP Metodlar və CRUD Əməliyyatları</p>
+        </header>
+
+        <nav>
+            <button class="nav-btn active" data-section="intro">Giriş</button>
+            <button class="nav-btn" data-section="routing">Routing</button>
+            <button class="nav-btn" data-section="http-methods">HTTP Metodlar</button>
+            <button class="nav-btn" data-section="crud">CRUD Əməliyyatları</button>
+            <button class="nav-btn" data-section="example">Tam Nümunə</button>
+        </nav>
+
+        <div class="content">
+            <!-- Giriş -->
+            <div class="section active" id="intro">
+                <h2>ASP.NET Web API nədir?</h2>
+                <p>ASP.NET Web API, RESTful servisləri yaratmaq üçün istifadə edilən güclü bir framework-dür. Bu framework HTTP protokolu üzərindən məlumat mübadiləsi aparmağa imkan verir.</p>
+
+                <h3>Əsas Xüsusiyyətlər</h3>
+                <ul>
+                    <li><strong>Platform müstəqilliyi:</strong> İstənilən platformadan (web, mobil, desktop) istifadə edilə bilər</li>
+                    <li><strong>RESTful arxitektura:</strong> HTTP metodlarından istifadə edərək resurslarla işləmək</li>
+                    <li><strong>JSON/XML dəstəyi:</strong> Müxtəlif məlumat formatları ilə işləmək</li>
+                    <li><strong>Routing sistemi:</strong> URL-lərə əsaslanan marşrutlaşdırma</li>
+                </ul>
+
+                <div class="note-box">
+                    <h3>💡 Nə üçün API?</h3>
+                    <p>API (Application Programming Interface) müxtəlif proqramların bir-biri ilə əlaqə qurmasına imkan verir. Web API isə bu əlaqəni HTTP protokolu vasitəsilə həyata keçirir.</p>
+                </div>
+            </div>
+
+            <!-- Routing -->
+            <div class="section" id="routing">
+                <h2>Routing (Marşrutlaşdırma)</h2>
+                <p>Routing, gələn HTTP sorğularının hansı controller metoduna yönləndirilməsini müəyyən edir. ASP.NET Web API-də iki əsas routing növü var:</p>
+
+                <h3>1. Convention-based Routing</h3>
+                <p>WebApiConfig.cs faylında qlobal olaraq konfiqurasiya edilir:</p>
+                <div class="code-block">
+                    <code>public static class WebApiConfig
+{
+    public static void Register(HttpConfiguration config)
+    {
+        config.Routes.MapHttpRoute(
+            name: "DefaultApi",
+            routeTemplate: "api/{controller}/{id}",
+            defaults: new { id = RouteParameter.Optional }
+        );
+    }
+}</code>
+                </div>
+
+                <h3>2. Attribute-based Routing</h3>
+                <p>Controller və ya metod səviyyəsində atributlarla təyin edilir:</p>
+                <div class="code-block">
+                    <code>[RoutePrefix("api/products")]
+public class ProductsController : ApiController
+{
+    [Route("")]  // GET api/products
+    public IEnumerable&lt;Product&gt; GetAll() { }
+
+    [Route("{id:int}")]  // GET api/products/5
+    public Product GetById(int id) { }
+
+    [Route("search/{name}")]  // GET api/products/search/laptop
+    public IEnumerable&lt;Product&gt; SearchByName(string name) { }
+}</code>
+                </div>
+
+                <div class="example-box">
+                    <h3>📌 Route Nümunələri</h3>
+                    <table>
+                        <tr>
+                            <th>URL</th>
+                            <th>Route Template</th>
+                            <th>İzah</th>
+                        </tr>
+                        <tr>
+                            <td>/api/products</td>
+                            <td>api/{controller}</td>
+                            <td>Bütün məhsulları əldə et</td>
+                        </tr>
+                        <tr>
+                            <td>/api/products/5</td>
+                            <td>api/{controller}/{id}</td>
+                            <td>ID-si 5 olan məhsulu əldə et</td>
+                        </tr>
+                        <tr>
+                            <td>/api/products/search/laptop</td>
+                            <td>api/{controller}/search/{name}</td>
+                            <td>Ada görə axtarış</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h3>Route Constraints (Məhdudiyyətlər)</h3>
+                <p>Route parametrlərini məhdudlaşdırmaq üçün constraints istifadə edilir:</p>
+                <div class="code-block">
+                    <code>[Route("{id:int}")]        // Yalnız rəqəm
+[Route("{id:min(1)}")]     // Minimum 1
+[Route("{id:range(1,100)}")] // 1-100 arası
+[Route("{name:alpha}")]    // Yalnız hərf
+[Route("{name:length(5,10)}")] // 5-10 simvol</code>
+                </div>
+            </div>
+
+            <!-- HTTP Methods -->
+            <div class="section" id="http-methods">
+                <h2>HTTP Metodları</h2>
+                <p>RESTful API-lərdə əsas HTTP metodları və onların istifadəsi:</p>
+
+                <div class="method-card">
+                    <span class="method-badge get">GET</span>
+                    <h3>GET - Məlumat oxumaq</h3>
+                    <p>Serverdən məlumat əldə etmək üçün istifadə edilir. Məlumatda heç bir dəyişiklik etmir.</p>
+                    <div class="code-block">
+                        <code>// Bütün məhsulları gətir
+[HttpGet]
+public IHttpActionResult Get()
+{
+    var products = db.Products.ToList();
+    return Ok(products);
+}
+
+// Xüsusi məhsulu gətir
+[HttpGet]
+public IHttpActionResult Get(int id)
+{
+    var product = db.Products.Find(id);
+    if (product == null)
+        return NotFound();
+    return Ok(product);
+}</code>
+                    </div>
+                </div>
+
+                <div class="method-card">
+                    <span class="method-badge post">POST</span>
+                    <h3>POST - Yeni məlumat yaratmaq</h3>
+                    <p>Serverə yeni məlumat göndərmək və yaratmaq üçün istifadə edilir.</p>
+                    <div class="code-block">
+                        <code>[HttpPost]
+public IHttpActionResult Post([FromBody] Product product)
+{
+    if (!ModelState.IsValid)
+        return BadRequest(ModelState);
+    
+    db.Products.Add(product);
+    db.SaveChanges();
+    
+    return CreatedAtRoute("DefaultApi", 
+        new { id = product.Id }, product);
+}</code>
+                    </div>
+                </div>
+
+                <div class="method-card">
+                    <span class="method-badge put">PUT</span>
+                    <h3>PUT - Məlumatı yeniləmək</h3>
+                    <p>Mövcud məlumatı tamamilə yeniləmək üçün istifadə edilir.</p>
+                    <div class="code-block">
+                        <code>[HttpPut]
+public IHttpActionResult Put(int id, [FromBody] Product product)
+{
+    if (!ModelState.IsValid)
+        return BadRequest(ModelState);
+    
+    if (id != product.Id)
+        return BadRequest();
+    
+    db.Entry(product).State = EntityState.Modified;
+    db.SaveChanges();
+    
+    return StatusCode(HttpStatusCode.NoContent);
+}</code>
+                    </div>
+                </div>
+
+                <div class="method-card">
+                    <span class="method-badge delete">DELETE</span>
+                    <h3>DELETE - Məlumatı silmək</h3>
+                    <p>Serverdən məlumatı silmək üçün istifadə edilir.</p>
+                    <div class="code-block">
+                        <code>[HttpDelete]
+public IHttpActionResult Delete(int id)
+{
+    var product = db.Products.Find(id);
+    if (product == null)
+        return NotFound();
+    
+    db.Products.Remove(product);
+    db.SaveChanges();
+    
+    return Ok(product);
+}</code>
+                    </div>
+                </div>
+
+                <h3>HTTP Status Kodları</h3>
+                <table>
+                    <tr>
+                        <th>Kod</th>
+                        <th>Ad</th>
+                        <th>İzah</th>
+                    </tr>
+                    <tr>
+                        <td>200</td>
+                        <td>OK</td>
+                        <td>Sorğu uğurla yerinə yetirildi</td>
+                    </tr>
+                    <tr>
+                        <td>201</td>
+                        <td>Created</td>
+                        <td>Yeni resurs yaradıldı</td>
+                    </tr>
+                    <tr>
+                        <td>204</td>
+                        <td>No Content</td>
+                        <td>Uğurlu, lakin cavab yoxdur</td>
+                    </tr>
+                    <tr>
+                        <td>400</td>
+                        <td>Bad Request</td>
+                        <td>Səhv sorğu</td>
+                    </tr>
+                    <tr>
+                        <td>404</td>
+                        <td>Not Found</td>
+                        <td>Resurs tapılmadı</td>
+                    </tr>
+                    <tr>
+                        <td>500</td>
+                        <td>Internal Server Error</td>
+                        <td>Server xətası</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- CRUD -->
+            <div class="section" id="crud">
+                <h2>CRUD Əməliyyatları</h2>
+                <p>CRUD - Create (Yarat), Read (Oxu), Update (Yenilə), Delete (Sil) əməliyyatlarının qısaltmasıdır.</p>
+
+                <h3>1. CREATE - Yaratma</h3>
+                <div class="code-block">
+                    <code>[HttpPost]
+[Route("api/students")]
+public IHttpActionResult CreateStudent([FromBody] Student student)
+{
+    if (student == null)
+        return BadRequest("Məlumat göndərilməyib");
+
+    if (!ModelState.IsValid)
+        return BadRequest(ModelState);
+
+    db.Students.Add(student);
+    db.SaveChanges();
+
+    return Created($"api/students/{student.Id}", student);
+}</code>
+                </div>
+
+                <h3>2. READ - Oxuma</h3>
+                <div class="code-block">
+                    <code>// Hamısını oxu
+[HttpGet]
+[Route("api/students")]
+public IHttpActionResult GetAllStudents()
+{
+    var students = db.Students.ToList();
+    return Ok(students);
+}
+
+// ID-yə görə oxu
+[HttpGet]
+[Route("api/students/{id}")]
+public IHttpActionResult GetStudent(int id)
+{
+    var student = db.Students.Find(id);
+    if (student == null)
+        return NotFound();
+    
+    return Ok(student);
+}
+
+// Filtrlə oxu
+[HttpGet]
+[Route("api/students/search")]
+public IHttpActionResult SearchStudents(string name)
+{
+    var students = db.Students
+        .Where(s => s.Name.Contains(name))
+        .ToList();
+    return Ok(students);
+}</code>
+                </div>
+
+                <h3>3. UPDATE - Yeniləmə</h3>
+                <div class="code-block">
+                    <code>[HttpPut]
+[Route("api/students/{id}")]
+public IHttpActionResult UpdateStudent(int id, [FromBody] Student student)
+{
+    if (student == null)
+        return BadRequest("Məlumat göndərilməyib");
+
+    if (id != student.Id)
+        return BadRequest("ID uyğun gəlmir");
+
+    if (!ModelState.IsValid)
+        return BadRequest(ModelState);
+
+    var existingStudent = db.Students.Find(id);
+    if (existingStudent == null)
+        return NotFound();
+
+    // Məlumatları yenilə
+    existingStudent.Name = student.Name;
+    existingStudent.Email = student.Email;
+    existingStudent.Age = student.Age;
+
+    db.SaveChanges();
+    return Ok(existingStudent);
+}</code>
+                </div>
+
+                <h3>4. DELETE - Silmə</h3>
+                <div class="code-block">
+                    <code>[HttpDelete]
+[Route("api/students/{id}")]
+public IHttpActionResult DeleteStudent(int id)
+{
+    var student = db.Students.Find(id);
+    if (student == null)
+        return NotFound();
+
+    db.Students.Remove(student);
+    db.SaveChanges();
+
+    return Ok(new { message = "Tələbə uğurla silindi" });
+}</code>
+                </div>
+
+                <div class="note-box">
+                    <h3>💡 Əsas Qeydlər</h3>
+                    <ul>
+                        <li><strong>Model Validation:</strong> ModelState.IsValid ilə məlumat doğruluğunu yoxlayın</li>
+                        <li><strong>Null Check:</strong> Həmişə null dəyərləri yoxlayın</li>
+                        <li><strong>Status Kodları:</strong> Düzgün HTTP status kodlarından istifadə edin</li>
+                        <li><strong>Error Handling:</strong> Try-catch bloklarından istifadə edin</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tam Nümunə -->
+            <div class="section" id="example">
+                <h2>Tam Nümunə: Məhsul API</h2>
+                <p>Aşağıda tam funksional bir məhsul API-nin nümunəsi verilmişdir:</p>
+
+                <h3>1. Model Sinfi</h3>
+                <div class="code-block">
+                    <code>public class Product
+{
+    public int Id { get; set; }
+    
+    [Required(ErrorMessage = "Ad tələb olunur")]
+    [StringLength(100)]
+    public string Name { get; set; }
+    
+    [Required]
+    [Range(0, double.MaxValue)]
+    public decimal Price { get; set; }
+    
+    [StringLength(500)]
+    public string Description { get; set; }
+    
+    public int Stock { get; set; }
+    
+    public DateTime CreatedDate { get; set; }
+}</code>
+                </div>
+
+                <h3>2. Controller</h3>
+                <div class="code-block">
+                    <code>[RoutePrefix("api/products")]
+public class ProductsController : ApiController
+{
+    private ApplicationDbContext db = new ApplicationDbContext();
+
+    // GET: api/products
+    [HttpGet]
+    [Route("")]
+    public IHttpActionResult GetProducts()
+    {
+        try
+        {
+            var products = db.Products.OrderBy(p => p.Name).ToList();
+            return Ok(products);
+        }
+        catch (Exception ex)
+        {
+            return InternalServerError(ex);
+        }
+    }
+
+    // GET: api/products/5
+    [HttpGet]
+    [Route("{id:int}")]
+    public IHttpActionResult GetProduct(int id)
+    {
+        var product = db.Products.Find(id);
+        if (product == null)
+            return NotFound();
+
+        return Ok(product);
+    }
+
+    // POST: api/products
+    [HttpPost]
+    [Route("")]
+    public IHttpActionResult CreateProduct([FromBody] Product product)
+    {
+        if (product == null)
+            return BadRequest("Məhsul məlumatı göndərilməyib");
+
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        product.CreatedDate = DateTime.Now;
+        db.Products.Add(product);
+        db.SaveChanges();
+
+        return Created($"api/products/{product.Id}", product);
+    }
+
+    // PUT: api/products/5
+    [HttpPut]
+    [Route("{id:int}")]
+    public IHttpActionResult UpdateProduct(int id, [FromBody] Product product)
+    {
+        if (product == null)
+            return BadRequest("Məhsul məlumatı göndərilməyib");
+
+        if (id != product.Id)
+            return BadRequest("ID uyğun gəlmir");
+
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        var existingProduct = db.Products.Find(id);
+        if (existingProduct == null)
+            return NotFound();
+
+        existingProduct.Name = product.Name;
+        existingProduct.Price = product.Price;
+        existingProduct.Description = product.Description;
+        existingProduct.Stock = product.Stock;
+
+        db.SaveChanges();
+        return Ok(existingProduct);
+    }
+
+    // DELETE: api/products/5
+    [HttpDelete]
+    [Route("{id:int}")]
+    public IHttpActionResult DeleteProduct(int id)
+    {
+        var product = db.Products.Find(id);
+        if (product == null)
+            return NotFound();
+
+        db.Products.Remove(product);
+        db.SaveChanges();
+
+        return Ok(new { message = "Məhsul uğurla silindi" });
+    }
+
+    // GET: api/products/search?name=laptop
+    [HttpGet]
+    [Route("search")]
+    public IHttpActionResult SearchProducts(string name)
+    {
+        if (string.IsNullOrWhiteSpace(name))
+            return BadRequest("Axtarış mətni tələb olunur");
+
+        var products = db.Products
+            .Where(p => p.Name.Contains(name))
+            .ToList();
+
+        return Ok(products);
+    }
+
+    protected override void Dispose(bool disposing)
+    {
+        if (disposing)
+            db.Dispose();
+        base.Dispose(disposing);
+    }
+}</code>
+                </div>
+
+                <h3>3. İstifadə Nümunələri (Postman/HTTP)</h3>
+                <div class="example-box">
+                    <h4>Yeni məhsul əlavə et (POST)</h4>
+                    <p><strong>URL:</strong> POST http://localhost:5000/api/products</p>
+                    <p><strong>Body (JSON):</strong></p>
+                    <div class="code-block">
+                        <code>{
+    "name": "Laptop",
+    "price": 1500.00,
+    "description": "Gaming laptop",
+    "stock": 10
+}</code>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h4>Bütün məhsulları gətir (GET)</h4>
+                    <p><strong>URL:</strong> GET http://localhost:5000/api/products</p>
+                </div>
+
+                <div class="example-box">
+                    <h4>Məhsulu yenilə (PUT)</h4>
+                    <p><strong>URL:</strong> PUT http://localhost:5000/api/products/1</p>
+                    <p><strong>Body (JSON):</strong></p>
+                    <div class="code-block">
+                        <code>{
+    "id": 1,
+    "name": "Gaming Laptop",
+    "price": 1800.00,
+    "description": "Yüksək performanslı gaming laptop",
+    "stock": 5
+}</code>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h4>Məhsulu sil (DELETE)</h4>
+                    <p><strong>URL:</strong> DELETE http://localhost:5000/api/products/1</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>🎓 ASP.NET Web API Təlimi | 2025</p>
+            <p>Bu material təhsil məqsədilə hazırlanmışdır</p>
+        </footer>
+    </div>
+
+    <script>
+        const navBtns = document.querySelectorAll('.nav-btn');
+        const sections = document.querySelectorAll('.section');
+
+        navBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const targetSection = btn.dataset.section;
+                
+                navBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                    if (section.id === targetSection) {
+                        section.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

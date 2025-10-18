@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <button onclick="loadData()">Load data</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+<script>
+    function loadData() {
+        const table = document.querySelector('tbody');
+        const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0IiwiZW1haWwiOiIiLCJleHAiOjE3NjA3Nzk1MjEsImlzcyI6IlNlY3VyZUFwaSIsImF1ZCI6IlNlY3VyZUFwaVVzZXIifQ.8bemK7BsF8YhJaNK05oKEp0fUmM4SKSX0brD4t0DfVs';
+        fetch('https://localhost:7091/api/products',
+            {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`,
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                table.innerHTML = '';
+
+                console.log(data);
+                for (let student of data) {
+                    table.innerHTML += `
+                    <tr>
+                        <td>${student.id}</td>
+                        <td>${student.name}</td>
+                    </tr>
+                `;
+                }
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    }
+</script>
