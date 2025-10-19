@@ -20,19 +20,20 @@ namespace Pb403ApiDemo.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login(string username, string password)
+        public async Task<IActionResult> Login([FromBody]LoginDto loginDto)
         {
-            var user = await _userManager.FindByNameAsync(username);
+            var user = await _userManager.FindByNameAsync(loginDto.Username);
 
-            if (user == null || !await _userManager.CheckPasswordAsync(user, password))
+            if (user == null || !await _userManager.CheckPasswordAsync(user, loginDto.Password))
             {
                 return Unauthorized("Invalid username or password.");
             }
 
             var jwtRequest = new JwtRequestModel
             {
-                Username = username,
-                Email = ""
+                Username = loginDto.Username,
+                Email = "",
+                Roles = (await _userManager.GetRolesAsync(user)).ToList()
             };
 
             var jwtResponse = await _authService.CreateToken(jwtRequest);

@@ -1,4 +1,3 @@
-
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -14,7 +13,7 @@ namespace Pb403ApiDemo
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -59,7 +58,6 @@ namespace Pb403ApiDemo
 
             builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JwtSettings"));
             builder.Services.AddScoped<AuthService>();
-        
 
             builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
             {
@@ -105,20 +103,31 @@ namespace Pb403ApiDemo
                 };
             });
 
+            builder.Services.AddScoped<DataInitializer>();
+
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
+
+            using (var scope = app.Services.CreateScope())
             {
+                var dataInitializer = scope.ServiceProvider.GetRequiredService<DataInitializer>();
+                await dataInitializer.SeedData();
+            }
+
+            // Configure the HTTP request pipeline.
+            //if (app.Environment.IsDevelopment())
+            //{
                 app.UseSwagger();
                 app.UseSwaggerUI();
-            }
+            //}
+
+            app.UseStaticFiles();
 
             app.UseMiddleware<ExceptionHandlerMiddleware>(); // Use the custom exception handling middleware
 
             app.UseLoggingMiddleware(); // Use the custom logging middleware
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseCors("AllowAll"); // Apply the "AllowAll" policy
 
@@ -128,7 +137,7 @@ namespace Pb403ApiDemo
 
             app.MapControllers();
 
-            app.Run();
+            await app.RunAsync();
         }
     }
 }

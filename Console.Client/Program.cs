@@ -5,7 +5,7 @@
         static async Task Main(string[] args)
         {
             var httpClient = new HttpClient();
-            var response = await httpClient.GetStringAsync("https://localhost:7091/api/students");
+            var response = await httpClient.GetStringAsync("http://gadimovsabir-001-site9.mtempurl.com/api/Products");
 
             Console.WriteLine(response);
             //if (response.IsSuccessStatusCode)
